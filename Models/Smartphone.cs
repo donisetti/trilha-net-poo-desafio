@@ -14,6 +14,14 @@ namespace DesafioPOO.Models
             // TODO: Passar os parâmetros do construtor para as propriedades
         }
 
+        protected Smartphone(string numero, string modelo, string iMEI, int memoria)
+        {
+            Numero = numero;
+            Modelo = modelo;
+            IMEI = iMEI;
+            Memoria = memoria;
+        }
+
         public void Ligar()
         {
             Console.WriteLine("Ligando...");
